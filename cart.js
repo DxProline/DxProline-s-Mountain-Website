@@ -72,7 +72,7 @@ function clearCart() {
 
 // Přesměrování na stránku Checkout
 function proceedToCheckout() {
-    window.location.href = 'KomplexForm.html';
+    window.location.href = 'komplexniForm.html';
 }
 
 // Načtení košíku při načtení stránky
