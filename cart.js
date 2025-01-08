@@ -75,5 +75,6 @@ function proceedToCheckout() {
     window.location.href = 'komplexniForm.html';
 }
 
+
 // Načtení košíku při načtení stránky
 window.onload = loadCart;
