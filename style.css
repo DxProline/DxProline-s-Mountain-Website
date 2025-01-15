@@ -77,18 +77,16 @@ button {
 .button-container {
     display: flex;
     justify-content: center; /* Horizontální centrování */
-    align-items: center; /* Vertikální centrování (pokud potřebujete) */
-    margin: 20px auto; /* Volitelný prostor kolem */
-    height: 100px; /* Volitelné, pro vertikální centrování */
+    align-items: center; /* Vertikální centrování */
+    gap: 10px; /* Mezera mezi tlačítky */
+    margin: 10px auto; /* Menší prostor kolem */
 }
 
-
-button:hover {
-    transform: scale(1.05);
+.button-container button {
+    width: 150px;
 }
-
-button:active {
-    transform: scale(0.95);
+.button-container button:hover {
+    background-color: #0056b3; /* Hover efekt */
 }
 
 button[onclick="proceedToCheckout()"] {
