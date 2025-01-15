@@ -29,6 +29,7 @@ function validateLogin(event) {
 function login() {
     const email = document.getElementById('email').value;
     localStorage.setItem('currentUser', email);
+    window.location.href = 'index.html';
 }
 function loadCurrentUser() {
     const currentUser = localStorage.getItem('currentUser');

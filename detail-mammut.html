@@ -6,6 +6,14 @@
     <title>Mammut Waymarker - Detail produktu</title>
     <link rel="stylesheet" href="style.css">
     <script src="cart.js"></script>
+    <link rel="stylesheet" href="login.css">
+    <script src="login.js"></script>
+    <script>
+        window.onload = function() {
+            loadCurrentUser();
+            loadCart();
+        };
+    </script>
 </head>
 <body>
 
@@ -23,6 +31,7 @@
             <input type="text" placeholder="Search..." class="search-bar">
         </div>
         <ul class="menu">
+            <li><a id="loginLink" href="login.html">Přihlásit se</a></li>
             <li>
                 <a href="shopingCart.html">
                     <img src="menu.png" alt="Menu Icon" class="menu-icon">
