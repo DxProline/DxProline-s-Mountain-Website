@@ -31,11 +31,12 @@ function loadCart() {
     const cart = JSON.parse(localStorage.getItem('cart')) || [];
     const cartTableBody = document.querySelector('#cart-table tbody');
     const totalPriceElement = document.getElementById('total-price');
-
     let totalPrice = 0;
 
+    if (cartTableBody === null) {
+        return;
+    }
     cartTableBody.innerHTML = ""; // Vymazání existujícího obsahu
-
     cart.forEach(product => {
         const row = document.createElement('tr');
         row.innerHTML = `
@@ -78,3 +79,4 @@ function proceedToCheckout() {
 
 // Načtení košíku při načtení stránky
 window.onload = loadCart;
+
