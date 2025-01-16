@@ -14,6 +14,7 @@
             loadCart();
         };
     </script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
 </head>
 <body>
 
@@ -47,7 +48,21 @@
 
     <div class="product-detail">
         <h1>Patagonia SV</h1>
-        <img src="Patagonia.png" alt="Patagonia SV" class="product-image-large">
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+        <!-- Slides -->
+         
+        <div class="swiper-slide"><img src="BundaPatagonia/1pohled.webp" alt="Image 1" class="image" loading="lazy"></div>
+        <div class="swiper-slide"><img src="BundaPatagonia/2pohled.webp" alt="Image 2" class="image" loading="lazy"></div>
+        <div class="swiper-slide"><img src="BundaPatagonia/3pohled.webp" alt="Image 3" class="image" loading="lazy"></div>
+            </div>
+        
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+         
+        </div>
         <p class="product-description">
             Bunda Patagonia SV je perfektní volbou pro expedice a outdoorové dobrodružství.
             Kombinuje lehkost, vysokou odolnost a skvělou ochranu proti dešti a větru, což ji činí ideální pro náročné podmínky.
@@ -81,4 +96,19 @@
     </footer>
 
 </body>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script>
+    const swiper = new Swiper('.swiper', {
+      // Nastavení swiperu
+      loop: true, // Nekonečný loop
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+    });
+  </script>
 </html>
