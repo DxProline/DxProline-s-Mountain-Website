@@ -13,11 +13,12 @@
             loadCart();
         };
     </script>
-    <link
-rel="stylesheet"
-href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+     <link
+     rel="stylesheet"
+     href="https://unpkg.com/swiper/swiper-bundle.min.css"
+   />
 
-<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
 
     
 </head>
@@ -25,19 +26,7 @@ href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
 
 
     <!-- Slider main container -->
-<div class="swiper">
-    <!-- Additional required wrapper -->
-    <div class="swiper-wrapper">
-<!-- Slides -->
-<div class="swiper-slide"><img src="BundaArc/1pohled.png" alt="Image 1" class="image" loading="lazy"></div>
-<div class="swiper-slide"><img src="BundaArc/2pohled.png" alt="Image 2" class="image" loading="lazy"></div>
-<div class="swiper-slide">Slide 3</div>
-    </div>
 
-    <!-- If we need navigation buttons -->
-    <div class="swiper-button-prev"></div>
-    <div class="swiper-button-next"></div>
-</div>
 
 
 
@@ -71,7 +60,22 @@ href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
 
     <div class="product-detail">
         <h1>ArcTeryx Beta LT</h1>
-        <img src="ArcTeryxBetaLT.png" alt="ArcTeryx Beta LT" class="product-image-large">
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+        <!-- Slides -->
+         
+        <div class="swiper-slide"><img src="BundaArc/1pohled.png" alt="Image 1" class="image" loading="lazy"></div>
+        <div class="swiper-slide"><img src="BundaArc/2pohled.png" alt="Image 2" class="image" loading="lazy"></div>
+        <div class="swiper-slide">Slide 3</div>
+            </div>
+        
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+         
+        </div>
+      
         <p class="product-description">
             Bunda ArcTeryx Beta LT je ideální volbou pro horské túry a extrémní podmínky.
             Lehký design, odolný materiál a vysoká ochrana proti dešti i větru.
@@ -106,4 +110,19 @@ href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
         <a href="index.html">Zpět na hlavní stránku</a>
     </footer>
 </body>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script>
+    const swiper = new Swiper('.swiper', {
+      // Nastavení swiperu
+      loop: true, // Nekonečný loop
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+    });
+  </script>
 </html>
