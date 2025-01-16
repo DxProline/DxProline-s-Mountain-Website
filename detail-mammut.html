@@ -14,6 +14,7 @@
             loadCart();
         };
     </script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
 </head>
 <body>
 
@@ -47,7 +48,21 @@
 
     <div class="product-detail">
         <h1>Mammut Waymarker</h1>
-        <img src="Mammut.png" alt="Mammut Waymarker" class="product-image-large">
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+            <!-- Slides -->
+             
+            <div class="swiper-slide"><img src="BundaMammut/1pohled.jpeg" alt="Image 1" class="image" loading="lazy"></div>
+            <div class="swiper-slide"><img src="BundaMammut/2pohled.jpeg" alt="Image 2" class="image" loading="lazy"></div>
+            <div class="swiper-slide"><img src="BundaMammut/3pohled.jpeg" alt="Image 3" class="image" loading="lazy"></div>
+                </div>
+            
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+             
+            </div>
         <p class="product-description">
             Bunda Mammut Waymarker je skvělou volbou pro náročné outdoorové aktivity.
             Její lehká konstrukce, robustní materiály a vynikající ochrana proti nepříznivému počasí poskytují komfort i v extrémních podmínkách.
@@ -82,4 +97,19 @@
     </footer>
 
 </body>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script>
+    const swiper = new Swiper('.swiper', {
+      // Nastavení swiperu
+      loop: true, // Nekonečný loop
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+    });
+  </script>
 </html>
