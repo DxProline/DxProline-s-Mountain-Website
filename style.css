@@ -250,7 +250,7 @@ button[onclick="proceedToCheckout()"]:hover {
     text-align: center;
     color: white;
     font-family: Arial, sans-serif;
-    margin-top: 20vh;
+    margin-top: 320px;
 }
 
 .products {
@@ -573,6 +573,7 @@ ul {
 }
 
 /*Velikost ikon*/
+TODO /*Ikona košíku je nefunkčí při zmenšení obrazovky*/
 .menu-icon {
     height: 25px;
     margin-right: 15px;
@@ -591,7 +592,7 @@ ul {
 /* #PatagoniaBunda */
 /* Styl pro video na pozadí */
 .video-background {
-    position: fixed;
+    position: fixed; /*absolutní pozicování objektu */
     top: 0;
     left: 0;
     width: 100%;
@@ -613,7 +614,7 @@ background: none;
 
 
 .product-detail {
-    position: relative;
+    position: relative; /*absolutní pozicování objektu */
     z-index: 1; /* Obsah bude nad videem */
     background-color: rgba(255, 255, 255, 0.8); /* Poloprůhledné pozadí pro čitelnost */
     border-radius: 8px;
