@@ -516,8 +516,8 @@ body.detail-page .navbar {
 
 
 .menu-icon {
-    width: 40px; /* Nastavte šířku podle potřeby */
-    height: 90px; /* Nastavte výšku podle potřeby */
+    width: 30px; /* Nastavte šířku podle potřeby */
+    height: 30px; /* Nastavte výšku podle potřeby */
     cursor: pointer; /* Změní kurzor na ruku při hover */
     transition: transform 0.2s ease; /* Přidá jemný efekt při hover */
 }
