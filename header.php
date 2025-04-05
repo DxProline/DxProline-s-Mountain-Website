@@ -19,4 +19,3 @@
         <li><a href="kontakt.php">Kontakt</a></li>
     </ul>
 </nav>
-TODO <?-- nevim co s tim jak to propojit -->
