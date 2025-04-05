@@ -1,61 +1,70 @@
 <!DOCTYPE html>
 <html lang="cs">
-<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Patagonia SV - Detail produktu</title>
+    <title>ArcTeryx Beta LT - Detail produktu</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="login.css">
-    <script src="cart.js"></script>
     <script src="login.js"></script>
+    <script src="cart.js"></script>
     <script>
         window.onload = function() {
             loadCurrentUser();
             loadCart();
         };
     </script>
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+
+
+
+    
 </head>
 <body>
 
+
+    <!-- Slider main container -->
+
+
+
+
     <!-- Video na pozadí -->
     <video autoplay muted loop class="video-background">
-        <source src="patagoniaVid.mp4" type="video/mp4">
+        <source src="ArcteryxVid.mp4" type="video/mp4">
     </video>
 
     <nav class="navbar">
         <div class="logo">
-            <a href="index.html"><img src="logo.png" alt="Logo"></a>
+            <a href="index.php"><img src="logo.png" alt="Logo"></a>
         </div>
         <div class="search-container">
             <img src="lupa.png" alt="Search Icon" class="search-icon">
             <input type="text" placeholder="Search..." class="search-bar">
         </div>
         <ul class="menu">
-            <li><a id="loginLink" href="login.html">Přihlásit se</a></li>
+            <li><a id="loginLink" href="login.php">Přihlásit se</a></li>
             <li>
-                <a href="shopingCart.html">
+                <a href="shopingCart.php">
                     <img src="menu.png" alt="Menu Icon" class="menu-icon">
                 </a>
             </li>
             
-            <li><a href="menu.html">Menu</a></li>
-            <li><a href="produkty.html">Produkty</a></li>
+            <li><a href="menu.php">Menu</a></li>
+            <li><a href="produkty.php">Produkty</a></li>
             <li><a href="#">Služby</a></li>
-            <li><a href="kontakt.html">Kontakt</a></li>
+            <li><a href="kontakt.php">Kontakt</a></li>
         </ul>
     </nav>
 
     <div class="product-detail">
-        <h1>Patagonia SV</h1>
+        <h1>ArcTeryx Beta LT</h1>
         <div class="swiper">
             <!-- Additional required wrapper -->
             <div class="swiper-wrapper">
         <!-- Slides -->
          
-        <div class="swiper-slide"><img src="BundaPatagonia/1pohled.webp" alt="Image 1" class="image" loading="lazy"></div>
-        <div class="swiper-slide"><img src="BundaPatagonia/2pohled.webp" alt="Image 2" class="image" loading="lazy"></div>
-        <div class="swiper-slide"><img src="BundaPatagonia/3pohled.webp" alt="Image 3" class="image" loading="lazy"></div>
+        <div class="swiper-slide"><img src="BundaArc/1pohled.png" alt="Image 1" class="image" loading="lazy"></div>
+        <div class="swiper-slide"><img src="BundaArc/2pohled.png" alt="Image 2" class="image" loading="lazy"></div>
+        <div class="swiper-slide"><img src="BundaArc/3pohled.png" alt="Image 3" class="image" loading="lazy"></div>
             </div>
         
             <!-- If we need navigation buttons -->
@@ -63,19 +72,20 @@
             <div class="swiper-button-next"></div>
          
         </div>
+      
         <p class="product-description">
-            Bunda Patagonia SV je perfektní volbou pro expedice a outdoorové dobrodružství.
-            Kombinuje lehkost, vysokou odolnost a skvělou ochranu proti dešti a větru, což ji činí ideální pro náročné podmínky.
+            Bunda ArcTeryx Beta LT je ideální volbou pro horské túry a extrémní podmínky.
+            Lehký design, odolný materiál a vysoká ochrana proti dešti i větru.
         </p>
 
-        <p class="product-price">Cena: 399 $</p>
+        <p class="product-price">Cena: 600 $</p>
 
 
-        <form method="get" action="shopingCart.html" class="product-options">
+        <form method="get" action="shopingCart.php" class="product-options">
             <label for="color">Barva:</label>
             <select id="color" name="color">
-                <option value="oranzova">Oranžová</option>
-                <option value="modra">Černá</option>
+                <option value="cerna">Černá</option>
+                <option value="modra">Modrá</option>
                 <option value="zelena">Zelená</option>
             </select>
 
@@ -87,14 +97,15 @@
                 <option value="xl">XL</option>
             </select>
 
-            <button id="add-to-cart" onclick="addToCart('Patagonia SV', document.getElementById('color').value, 9672)">Přidat do košíku</button>
+            <button id="add-to-cart" onclick="addToCart('ArcTeryx Beta LT', document.getElementById('color').value, 8999)">Přidat do košíku</button>
+
+
         </form>
     </div>
 
     <footer>
-        <a href="index.html">Zpět na hlavní stránku</a>
+        <a href="index.php">Zpět na hlavní stránku</a>
     </footer>
-
 </body>
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <script>

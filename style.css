@@ -250,7 +250,7 @@ button[onclick="proceedToCheckout()"]:hover {
     text-align: center;
     color: white;
     font-family: Arial, sans-serif;
-    margin-top: 320px;
+    margin-top: 20vh;
 }
 
 .products {
