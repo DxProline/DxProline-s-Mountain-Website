@@ -10,9 +10,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="login.css">
     <script src="login.js"></script>
-    <script>
-        window.onload = loadCurrentUser;
-    </script>
+    <script src="loadUser.js"></script>
 </head>
 <body>
 

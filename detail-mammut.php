@@ -8,12 +8,7 @@
     <script src="cart.js"></script>
     <link rel="stylesheet" href="login.css">
     <script src="login.js"></script>
-    <script>
-        window.onload = function() {
-            loadCurrentUser();
-            loadCart();
-        };
-    </script>
+    <script src="common.js"></script>
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
 </head>
 <body>
@@ -79,18 +74,5 @@ require_once 'header.php';
 
 </body>
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-  <script>
-    const swiper = new Swiper('.swiper', {
-      // Nastavení swiperu
-      loop: true, // Nekonečný loop
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      },
-      pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-      },
-    });
-  </script>
+<script src="swiperConfig.js"></script>
 </html>

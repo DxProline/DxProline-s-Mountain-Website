@@ -8,12 +8,7 @@
     <script src="cart.js"></script>
     <link rel="stylesheet" href="login.css">
     <script src="login.js"></script>
-    <script>
-        window.onload = function() {
-            loadCurrentUser();
-            loadCart();
-        };
-    </script>
+    <script src="common.js"></script>
 </head>
 <body>
 <?php
