@@ -16,7 +16,7 @@ function validateForm(event) {
     const warnings = document.querySelectorAll('.warning');
     warnings.forEach(warning => warning.style.display = 'none');
 
-    // Validate email
+    /*neztrácí se uživatelem vyplněné hodnoty */
     if (!emailInput.value.includes('@')) {
         document.getElementById('email-warning').style.display = 'block';
         emailInput.style.borderColor = 'red';
