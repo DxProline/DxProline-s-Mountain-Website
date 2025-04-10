@@ -18,18 +18,20 @@ require_once 'header.php';
     <div class="fullscreen-container">
         <div class="login-container">
             <h2>Přihlášení</h2>
-            <form onsubmit="validateLogin(event)">
+            <form action="loginHandler.php" method="POST" onsubmit="return validateLogin(event)">
                 <div class="form-group">
                     <label for="email">E-mail:</label>
                     <input type="email" id="email" name="email" placeholder="Zadejte váš e-mail" required>
                     <div class="error" id="email-error">E-mail musí obsahovat znak @.</div>
+                    <span id="email-error" class="error" style="display:none;">Neplatný email.</span>
                 </div>
                 <div class="form-group">
                     <label for="password">Heslo:</label>
                     <input type="password" id="password" name="password" placeholder="Zadejte vaše heslo" required>
                     <div class="error" id="password-error">Heslo nesmí být prázdné.</div>
+                    <span id="password-error" class="error" style="display:none;">Heslo je povinné.</span>
                 </div>
-                <button type="submit" onclick="login()" class="login-button">Přihlásit se</button>
+                <button type="submit" class="login-button">Přihlásit se</button>
             </form>
         </div>
     </div>

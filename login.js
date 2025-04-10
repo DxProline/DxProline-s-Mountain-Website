@@ -26,18 +26,11 @@ function validateLogin(event) {
         password.style.borderColor = 'red';
         isValid = false;
     }
-
-    if (isValid) {
-        alert('Přihlášení bylo úspěšné!');
-        // Další logika pro přihlášení zde
-    }
 }
 
-function login() {
-    const email = document.getElementById('email').value;
+function login(email) {
     const sanitizedEmail = email.replace(/</g, "&lt;").replace(/>/g, "&gt;");
     localStorage.setItem('currentUser', sanitizedEmail);
-    window.location.href = 'index.php';
 }
 function loadCurrentUser() {
     const currentUser = localStorage.getItem('currentUser');
