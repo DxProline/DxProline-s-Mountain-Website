@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="login.css">
     <script src="cart.js"></script>
-    <script src="login.js"></script>
     <script src="common.js"></script>
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
 </head>
@@ -19,6 +18,7 @@
     </video>
 
 <?php
+require_once 'session.php';
 require_once 'header.php';
     ?>
 

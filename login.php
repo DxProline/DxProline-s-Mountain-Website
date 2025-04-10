@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="login.css">
     <script src="login.js"></script>
-    <script src="loadUser.js"></script>
 </head>
 <body>
 
@@ -18,7 +17,7 @@ require_once 'header.php';
     <div class="fullscreen-container">
         <div class="login-container">
             <h2>Přihlášení</h2>
-            <form action="loginHandler.php" method="POST" onsubmit="return validateLogin(event)">
+            <form action="loginHandler.php" method="POST">
                 <div class="form-group">
                     <label for="email">E-mail:</label>
                     <input type="email" id="email" name="email" placeholder="Zadejte váš e-mail" required>

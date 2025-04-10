@@ -7,7 +7,7 @@
         <input type="text" placeholder="Search..." class="search-bar">
     </div>
     <ul class="menu">
-        <li><a id="loginLink" href="login.php">Přihlásit se</a></li>
+        <li><a id="loginLink" href="login.php"><?= isset($_SESSION['user_email'])? $_SESSION['user_email']: "Přihlásit se" ?> </a></li>
         <li>
             <a href="shopingCart.php">
                 <img src="menu.png" alt="Menu Icon" class="menu-icon">

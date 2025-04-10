@@ -1,7 +1,5 @@
 window.onload = function() {
-    loadCurrentUser();
     loadCart();
-    document.getElementById('email').value = localStorage.getItem('currentUser');
 };
 function validateForm(event) {
 

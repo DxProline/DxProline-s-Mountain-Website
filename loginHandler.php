@@ -1,5 +1,6 @@
 <?php
 require_once 'database.php';
+session_start(); // Zahájení session
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $email = $_POST['email'];
@@ -26,7 +27,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             // Uživatel existuje, zkontroluj heslo
             $row = $stmt->fetch(PDO::FETCH_ASSOC);
             if (password_verify($password, $row['password_hash'])) {
-                header('Location: index.php');
+                // Uložení uživatele do session
+                $_SESSION['user_email'] = $email;
+                echo "Přihlášení úspěšné.";
+                /*header('Location: index.php');*/
+                exit;
             } else {
                 echo "Špatné přihlašovací údaje.";
             }
@@ -38,7 +43,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             $insertStmt->bindParam(':email', $email);
             $insertStmt->bindParam(':password_hash', $passwordHash);
             $insertStmt->execute();
-            header('Location: index.php');
+
+            // Uložení nového uživatele do session
+            $_SESSION['user_email'] = $email;
+            /*header('Location: index.php');*/
+            echo "Účet vytvořen a přihlášení úspěšné.";
+            exit;
         }
     } catch (PDOException $e) {
         echo "Chyba při zpracování požadavku: " . $e->getMessage();

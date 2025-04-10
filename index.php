@@ -9,12 +9,11 @@
     <meta name="author" content="Dlabal Jiří">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="login.css">
-    <script src="login.js"></script>
-    <script src="loadUser.js"></script>
 </head>
 <body>
 
 <?php
+require_once 'session.php';
 require_once 'header.php';
     ?>
 

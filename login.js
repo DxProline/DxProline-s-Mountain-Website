@@ -26,8 +26,9 @@ function validateLogin(event) {
         password.style.borderColor = 'red';
         isValid = false;
     }
+    return isValid;
 }
-
+/*
 function login(email) {
     const sanitizedEmail = email.replace(/</g, "&lt;").replace(/>/g, "&gt;");
     localStorage.setItem('currentUser', sanitizedEmail);
@@ -43,4 +44,4 @@ function loadCurrentUser() {
 }
 
 
-window.onload = loadCurrentUser;
+window.onload = loadCurrentUser;*/
