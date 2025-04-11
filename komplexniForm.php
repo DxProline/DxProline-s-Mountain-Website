@@ -1,3 +1,7 @@
+<?php
+require_once 'session.php';
+require_once 'share/header.php';
+?>
 <!DOCTYPE html>
 <html lang="cs">
 <head>
@@ -12,8 +16,8 @@
 <body>
 <?php
 require_once 'session.php';
-require_once 'header.php';
-    ?>
+require_once 'share/header.php';
+?>
     <main class="site-center">
         <div class="header-container">
             <h1>Košík</h1>

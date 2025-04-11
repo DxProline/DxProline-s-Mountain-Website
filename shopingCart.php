@@ -1,4 +1,8 @@
-    <!DOCTYPE html>
+<?php
+require_once 'session.php';
+require_once 'share/header.php';
+?>
+<!DOCTYPE html>
 <html lang="cs">
 <head>
     <meta charset="UTF-8">
@@ -10,10 +14,7 @@
     <script src="scripts/common.js"></script>
 </head>
 <body>
-<?php
-require_once 'session.php';
-require_once 'header.php';
-    ?>
+
     <h1>Košík</h1>
 
 <table id="cart-table">

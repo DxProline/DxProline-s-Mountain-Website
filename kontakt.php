@@ -1,3 +1,7 @@
+<?php
+require_once 'session.php';
+require_once 'share/header.php';
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,11 +12,6 @@
     <link rel="stylesheet" href="styles/login.css">
 </head>
 <body>
-
-<?php
-require_once 'session.php';
-require_once 'header.php';
-    ?>
     
     <div class="white-block">
         <section id="contact">

@@ -1,3 +1,7 @@
+<?php
+require_once 'session.php';
+require_once 'share/header.php';
+?>
 <!DOCTYPE html>
 <html lang="cs">
 <head>
@@ -17,10 +21,7 @@
         <source src="MammutVid.mp4" type="video/mp4">
     </video>
 
-<?php
-require_once 'session.php';
-require_once 'header.php';
-?>
+
 
     <div class="product-detail">
         <h1>Mammut Waymarker</h1>

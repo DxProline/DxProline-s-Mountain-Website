@@ -1,3 +1,7 @@
+<?php
+require_once 'session.php';
+require_once 'share/header.php';
+?> <!-- načítání headeru a footeru stránky z 1 souboru -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,11 +13,7 @@
 </head>
 <body>
 
-<?php
-require_once 'session.php';
-require_once 'header.php';
-    ?> <!-- načítání headeru a footeru stránky z 1 souboru -->
-    
+
     <div class="white-block">
         <section id="contact">
             <h2>Coming Soon</h2>

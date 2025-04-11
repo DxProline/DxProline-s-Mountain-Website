@@ -11,7 +11,7 @@
 <body>
 
 <?php
-require_once 'header.php';
+require_once 'share/header.php';
     ?> <!-- načítání headeru a footeru stránky z 1 souboru -->
 
     <div class="fullscreen-container">
