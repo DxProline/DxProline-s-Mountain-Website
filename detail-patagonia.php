@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Patagonia SV - Detail produktu</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="login.css">
-    <script src="cart.js"></script>
-    <script src="common.js"></script>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/login.css">
+    <script src="scripts/cart.js"></script>
+    <script src="scripts/common.js"></script>
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
 </head>
 <body>
@@ -29,9 +29,9 @@ require_once 'header.php';
             <div class="swiper-wrapper">
         <!-- Slides -->
          
-        <div class="swiper-slide"><img src="BundaPatagonia/1pohled.webp" alt="Image 1" class="image" loading="lazy"></div>
-        <div class="swiper-slide"><img src="BundaPatagonia/2pohled.webp" alt="Image 2" class="image" loading="lazy"></div>
-        <div class="swiper-slide"><img src="BundaPatagonia/3pohled.webp" alt="Image 3" class="image" loading="lazy"></div>
+        <div class="swiper-slide"><img src="img/BundaPatagonia/1pohled.webp" alt="Image 1" class="image" loading="lazy"></div>
+        <div class="swiper-slide"><img src="img/BundaPatagonia/2pohled.webp" alt="Image 2" class="image" loading="lazy"></div>
+        <div class="swiper-slide"><img src="img/BundaPatagonia/3pohled.webp" alt="Image 3" class="image" loading="lazy"></div>
             </div>
         
             <!-- If we need navigation buttons -->
@@ -73,5 +73,5 @@ require_once 'header.php';
 
 </body>
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-<script src="swiperConfig.js"></script>
+<script src="scripts/swiperConfig.js"></script>
 </html>

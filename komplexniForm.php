@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MEM -Komplexní Formulář</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="cart.js"></script>
-    <link rel="stylesheet" href="login.css">
-    <script src="komplexniForm.js"></script>
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="scripts/cart.js"></script>
+    <link rel="stylesheet" href="styles/login.css">
+    <script src="scripts/komplexniForm.js"></script>
 </head>
 <body>
 <?php

@@ -109,7 +109,7 @@ h1 {
 }
 
 body {
-    background-image: url(backround.avif);
+    background-image: url(../img/others/backround.avif);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -698,7 +698,7 @@ background: none;
             }
             
     body {
-        background-image: url('backround.avif');
+        background-image: url('../img/others/backround.avif');
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;

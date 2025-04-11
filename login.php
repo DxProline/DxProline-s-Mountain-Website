@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MEM -Login</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="login.css">
-    <script src="login.js"></script>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/login.css">
+    <script src="scripts/login.js"></script>
 </head>
 <body>
 

@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MEM -shopingCart</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="cart.js"></script>
-    <link rel="stylesheet" href="login.css">
-    <script src="common.js"></script>
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="scripts/cart.js"></script>
+    <link rel="stylesheet" href="styles/login.css">
+    <script src="scripts/common.js"></script>
 </head>
 <body>
 <?php

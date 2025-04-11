@@ -3,10 +3,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ArcTeryx Beta LT - Detail produktu</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="login.css">
-    <script src="cart.js"></script>
-    <script src="common.js"></script>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/login.css">
+    <script src="scripts/cart.js"></script>
+    <script src="scripts/common.js"></script>
      <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
 
 
@@ -36,9 +36,9 @@ require_once 'header.php';
             <div class="swiper-wrapper">
         <!-- Slides -->
          
-        <div class="swiper-slide"><img src="BundaArc/1pohled.png" alt="Image 1" class="image" loading="lazy"></div>
-        <div class="swiper-slide"><img src="BundaArc/2pohled.png" alt="Image 2" class="image" loading="lazy"></div>
-        <div class="swiper-slide"><img src="BundaArc/3pohled.png" alt="Image 3" class="image" loading="lazy"></div>
+        <div class="swiper-slide"><img src="img/BundaArc/1pohled.png" alt="Image 1" class="image" loading="lazy"></div>
+        <div class="swiper-slide"><img src="img/BundaArc/2pohled.png" alt="Image 2" class="image" loading="lazy"></div>
+        <div class="swiper-slide"><img src="img/BundaArc/3pohled.png" alt="Image 3" class="image" loading="lazy"></div>
             </div>
         
             <!-- If we need navigation buttons -->
@@ -82,5 +82,5 @@ require_once 'header.php';
     </footer>
 </body>
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-<script src="swiperConfig.js"></script>
+<script src="scripts/swiperConfig.js"></script>
 </html>
