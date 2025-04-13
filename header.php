@@ -1,10 +1,10 @@
 <nav class="navbar">
     <div class="logo">
-        <a href="index.php"><img src="logo.png" alt="Logo"></a>
+        <a href="index.php"><img src="logo.png" alt="Začít obědnávat produkty"></a>
     </div>
     <div class="search-container">
         <img src="lupa.png" alt="Search Icon" class="search-icon">
-        <input type="text" placeholder="Search..." class="search-bar">
+        <input type="text" placeholder="Search..." class="search-bar" title="Vyhledejte produkty">
     </div>
     <ul class="menu">
         <li><a id="loginLink" href="login.php"><?= isset($_SESSION['user_email'])? $_SESSION['user_email']: "Přihlásit se" ?> </a></li>

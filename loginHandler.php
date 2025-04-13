@@ -7,9 +7,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $password = $_POST['password'];
 
     // Zabezpečení vstupů
-    $email = filter_var($email, FILTER_SANITIZE_EMAIL);
     if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-        echo "Neplatný email.";
+        header('Location: login.php?error=invalid_email&email=' . urlencode($email));
         exit;
     }
 
@@ -33,7 +32,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 header('Location: index.php');
                 exit;
             } else {
-                header('Location: login.php');
+                header('Location: login.php?error=invalid_password&email=' . urlencode($email));
+                exit;
             }
         } else {
             // Uživatel neexistuje, vytvoř nového

@@ -86,3 +86,9 @@
     justify-content: center; /* Horizontální centrování */
     align-items: center; /* Vertikální centrování */
 }
+
+.error-message {
+    color: red;
+    font-weight: bold;
+    margin: 10px 0;
+}

@@ -1,3 +1,9 @@
 Přesunout obsah ze session.php do header php.
 
 Session php smazat.
+
+Info z database.php přesunout do secretu kvůli public údajům
+
+https://wave.webaim.org/ - Proklikat celou stránku i aletry
+
+červený rámeček přidat do loginu
