@@ -1,17 +1,13 @@
-<?php
-require_once 'session.php';
-require_once 'share/header.php';
-?>
 <!DOCTYPE html>
 <html lang="cs">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mammut Waymarker - Detail produktu</title>
-    <link rel="stylesheet" href="styles/style.css">
-    <script src="scripts/cart.js"></script>
-    <link rel="stylesheet" href="styles/login.css">
-    <script src="scripts/common.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="cart.js"></script>
+    <link rel="stylesheet" href="login.css">
+    <script src="common.js"></script>
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
 </head>
 <body>
@@ -21,7 +17,10 @@ require_once 'share/header.php';
         <source src="MammutVid.mp4" type="video/mp4">
     </video>
 
-
+<?php
+require_once 'session.php';
+require_once 'header.php';
+?>
 
     <div class="product-detail">
         <h1>Mammut Waymarker</h1>
@@ -30,9 +29,9 @@ require_once 'share/header.php';
                 <div class="swiper-wrapper">
             <!-- Slides -->
              
-            <div class="swiper-slide"><img src="img/BundaMammut/1pohled.jpeg" alt="Image 1" class="image" loading="lazy"></div>
-            <div class="swiper-slide"><img src="img/BundaMammut/2pohled.jpeg" alt="Image 2" class="image" loading="lazy"></div>
-            <div class="swiper-slide"><img src="img/BundaMammut/3pohled.jpeg" alt="Image 3" class="image" loading="lazy"></div>
+            <div class="swiper-slide"><img src="BundaMammut/1pohled.jpeg" alt="Image 1" class="image" loading="lazy"></div>
+            <div class="swiper-slide"><img src="BundaMammut/2pohled.jpeg" alt="Image 2" class="image" loading="lazy"></div>
+            <div class="swiper-slide"><img src="BundaMammut/3pohled.jpeg" alt="Image 3" class="image" loading="lazy"></div>
                 </div>
             
                 <!-- If we need navigation buttons -->
@@ -75,5 +74,5 @@ require_once 'share/header.php';
 
 </body>
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-<script src="scripts/swiperConfig.js"></script>
+<script src="swiperConfig.js"></script>
 </html>

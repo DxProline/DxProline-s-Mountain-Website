@@ -1,5 +1,3 @@
 Přesunout obsah ze session.php do header php.
 
 Session php smazat.
-
-Opravit funkci validate Login

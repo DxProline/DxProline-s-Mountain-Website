@@ -29,15 +29,15 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             if (password_verify($password, $row['password_hash'])) {
                 // Uložení uživatele do session
                 $_SESSION['user_email'] = $email;
-                echo "Přihlášení úspěšné.";
-                /*header('Location: index.php');*/
+                /*echo "Přihlášení úspěšné.";*/
+                header('Location: index.php');
                 exit;
             } else {
-                echo "Špatné přihlašovací údaje.";
+                header('Location: login.php');
             }
         } else {
             // Uživatel neexistuje, vytvoř nového
-            $passwordHash = password_hash($password, PASSWORD_DEFAULT);
+            $passwordHash = password_hash($password, PASSWORD_DEFAULT); //Hesla jsou osolená automaticky, sůl tvoří 22 znaků za prefixem $2y$10$
             $insertQuery = "INSERT INTO user (email, password_hash) VALUES (:email, :password_hash)";
             $insertStmt = $conn->prepare($insertQuery);
             $insertStmt->bindParam(':email', $email);
@@ -46,8 +46,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
             // Uložení nového uživatele do session
             $_SESSION['user_email'] = $email;
-            /*header('Location: index.php');*/
-            echo "Účet vytvořen a přihlášení úspěšné.";
+            header('Location: index.php');
+            /* echo "Účet vytvořen a přihlášení úspěšné.";*/
             exit;
         }
     } catch (PDOException $e) {

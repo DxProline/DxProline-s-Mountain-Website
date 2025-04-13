@@ -1,23 +1,19 @@
-<?php
-require_once 'session.php';
-require_once 'share/header.php';
-?>
 <!DOCTYPE html>
 <html lang="cs">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MEM -Komplexní Formulář</title>
-    <link rel="stylesheet" href="styles/style.css">
-    <script src="scripts/cart.js"></script>
-    <link rel="stylesheet" href="styles/login.css">
-    <script src="scripts/komplexniForm.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="cart.js"></script>
+    <link rel="stylesheet" href="login.css">
+    <script src="komplexniForm.js"></script>
 </head>
 <body>
 <?php
 require_once 'session.php';
-require_once 'share/header.php';
-?>
+require_once 'header.php';
+    ?>
     <main class="site-center">
         <div class="header-container">
             <h1>Košík</h1>
