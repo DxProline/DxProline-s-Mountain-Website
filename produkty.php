@@ -24,12 +24,16 @@ require_once 'header.php';
     
     <section class="products-section">
         <h2>Produkty</h2>
+
+
         <div class="products">
             <div class="product">
                 <img src="/Praxe_Web/produkty/xeros.jpg" onclick="openImgOnfull(this.src)" alt="spacak" class="product-image">
                 <p>Spacák Xeros</p>
                 <p>Xeros je špičkový lezecký spacák značky Mountain Equipment vhodný pro klasický alpinismus. Lehký, voděodolný a dostatečně teplý, pro lezení ve velké stěně.</p>
             </div>
+
+
             <div class="product">
                 
                 <img src="/Praxe_Web/produkty/Svycarak.jpg" onclick="openImgOnfull(this.src)" alt="svycarak" class="product-image">

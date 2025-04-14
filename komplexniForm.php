@@ -43,7 +43,7 @@ require_once 'header.php';
                 </div>
                 <div class="form-group">
                     <label for="email">Email</label>
-                    <input type="email" id="email" name="email" required>
+                    <input type="email" id="email" name="email" required value=<?= isset($_SESSION['user_email'])? $_SESSION['user_email']: "" ?>>
                     <div class="warning" id="email-warning">Email musí obsahovat znak @</div>
                 </div>
                 <div class="form-group">

@@ -92,3 +92,18 @@
     font-weight: bold;
     margin: 10px 0;
 }
+
+.forgot-password-link {
+    display: block;
+    margin-top: 10px;
+    font-size: 0.9rem;
+    color: #007bff;
+    text-decoration: none;
+    text-align: right;
+    transition: color 0.3s ease;
+}
+
+.forgot-password-link:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}

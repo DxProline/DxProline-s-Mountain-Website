@@ -44,6 +44,9 @@ require_once 'header.php';
                 </div>
                 <button type="submit" class="login-button">Přihlásit se</button>
             </form>
+            <div class="form-group">
+                <a href="forgotPassword.php" class="forgot-password-link">Zapomněli jste heslo?</a>
+            </div>
         </div>
     </div>
     
