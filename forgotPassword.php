@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="login.css">
     <script src="js/login.js"></script>
+    <script src="js/forgotPassword.js"></script>
 </head>
 <body>
 
@@ -29,13 +30,15 @@ require_once 'header.php';
                         </div>
                     <?php endif; ?>
                     <div class="error" id="email-error">E-mail musí obsahovat znak @.</div>
+                    <div class="error" id="email-error" style="display:none;">Neplatný email.</div><!-- TODO udělat přihlášení a překopnout jestli se jedná o div nebo span -->
                     <span id="email-error" class="error" style="display:none;">Neplatný email.</span>
                 </div>
                 <button type="submit" class="login-button">Pokračovat</button>
             </form>
         </div>
     </div>
-    
+
+
 
 </body>
 </html>
