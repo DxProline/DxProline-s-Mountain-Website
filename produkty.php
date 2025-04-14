@@ -6,14 +6,27 @@
     <title>MEM -Produkty</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="login.css">
-    <script src="imageOpener.js"></script>
+    <script src="js/imageOpener.js"></script>
 </head>
 <body>
 
 <?php
 require_once 'session.php';
 require_once 'header.php';
+require_once 'database.php';
+
+// Připojení k databázi
+$db = new Database();
+$conn = $db->getConnection();
+
+// Načtení dat o produktech
+$query = "SELECT * FROM product";
+$stmt = $conn->prepare($query);
+$stmt->execute();
+$products = $stmt->fetchAll(PDO::FETCH_ASSOC);
     ?>
+
+
 
     <div class="imagefull" id="fullimgbox">
         <span onclick="closefullimg()" class="closeonclick">X</span>
@@ -24,27 +37,21 @@ require_once 'header.php';
     
     <section class="products-section">
         <h2>Produkty</h2>
-
-
         <div class="products">
-            <div class="product">
-                <img src="/Praxe_Web/produkty/xeros.jpg" onclick="openImgOnfull(this.src)" alt="spacak" class="product-image">
-                <p>Spacák Xeros</p>
-                <p>Xeros je špičkový lezecký spacák značky Mountain Equipment vhodný pro klasický alpinismus. Lehký, voděodolný a dostatečně teplý, pro lezení ve velké stěně.</p>
-            </div>
+        <?php foreach ($products as $product):  ?>
 
 
             <div class="product">
-                
-                <img src="/Praxe_Web/produkty/Svycarak.jpg" onclick="openImgOnfull(this.src)" alt="svycarak" class="product-image">
-                <p>Švýcarský Nůž Spartan</p>
-                <p>Kapesní nůž s odtlačnou pojistkou čepele. Délka v zavřeném stavu 9,1 cm. 11 funkcí.</p>
+                <img src="<?= htmlspecialchars($product['image_path']) ?>" onclick="openImgOnfull(this.src)" alt="<?= htmlspecialchars($product['name']) ?>" class="product-image">
+                <h2><?= htmlspecialchars($product['name']) ?></h2>
+                <p><?= htmlspecialchars($product['description']) ?></p>
             </div>
-            <div class="product">
-                <img src="/Praxe_Web/produkty/batoh.jpg" onclick="openImgOnfull(this.src)" alt="batoh" class="product-image">
-                <p>Batoh CIRQUE</p>
-                <p>Batoh CIRQUE od značky Black Diamond je objemnější člen rodiny Cirque, díky čemuž zvládne i dvoudenní skialpinistické výzvy.</p>
-            </div>
+
+
+            <?php endforeach; ?>
+
+
+
         </div>
     </section>
     

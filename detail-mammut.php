@@ -5,16 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mammut Waymarker - Detail produktu</title>
     <link rel="stylesheet" href="style.css">
-    <script src="cart.js"></script>
+    <script src="js/cart.js"></script>
     <link rel="stylesheet" href="login.css">
-    <script src="common.js"></script>
+    <script src="js/common.js"></script>
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
 </head>
 <body>
 
     <!-- Video na pozadí -->
     <video autoplay muted loop class="video-background">
-        <source src="MammutVid.mp4" type="video/mp4">
+        <source src="videa/MammutVid.mp4" type="video/mp4">
     </video>
 
 <?php
@@ -74,5 +74,5 @@ require_once 'header.php';
 
 </body>
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-<script src="swiperConfig.js"></script>
+<script src="js/swiperConfig.js"></script>
 </html>
