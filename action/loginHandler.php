@@ -1,5 +1,5 @@
 <?php
-require_once 'database.php';
+require_once '../database.php';
 session_start(); // Zahájení session
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
@@ -8,7 +8,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     // Zabezpečení vstupů
     if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-        header('Location: login.php?error=invalid_email&email=' . urlencode($email));
+        header('Location: ../login.php?error=invalid_email&email=' . urlencode($email));
         exit;
     }
 
@@ -29,10 +29,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 // Uložení uživatele do session
                 $_SESSION['user_email'] = $email;
                 /*echo "Přihlášení úspěšné.";*/
-                header('Location: index.php');
+                header('Location: ../index.php');
                 exit;
             } else {
-                header('Location: login.php?error=invalid_password&email=' . urlencode($email));
+                header('Location: ../login.php?error=invalid_password&email=' . urlencode($email));
                 exit;
             }
         } else {
@@ -46,7 +46,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
             // Uložení nového uživatele do session
             $_SESSION['user_email'] = $email;
-            header('Location: index.php');
+            header('Location: ../index.php');
             /* echo "Účet vytvořen a přihlášení úspěšné.";*/
             exit;
         }
