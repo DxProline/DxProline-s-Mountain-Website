@@ -18,15 +18,44 @@ require_once 'database.php';
 // Připojení k databázi
 $db = new Database();
 $conn = $db->getConnection();
+//filtrované seznamy položek
+// Načtení kategorií
+$categoryQuery = "SELECT id, name FROM category";
+$categoryStmt = $conn->prepare($categoryQuery);
+$categoryStmt->execute();
+$categories = $categoryStmt->fetchAll(PDO::FETCH_ASSOC);
 
-// Načtení dat o produktech
-$query = "SELECT * FROM product";
-$stmt = $conn->prepare($query);
-$stmt->execute();
-$products = $stmt->fetchAll(PDO::FETCH_ASSOC);
-    ?>
+// Získání vybrané kategorie z GET parametru
+$selectedCategory = isset($_GET['category_id']) ? (int)$_GET['category_id'] : null;
 
+// Načtení produktů podle vybrané kategorie
+$productQuery = "SELECT * FROM product";
+if ($selectedCategory) {
+    $productQuery .= " WHERE category_id = :category_id";
+}
+$productStmt = $conn->prepare($productQuery);
 
+if ($selectedCategory) {
+    $productStmt->bindParam(':category_id', $selectedCategory, PDO::PARAM_INT);
+}
+
+$productStmt->execute();
+$products = $productStmt->fetchAll(PDO::FETCH_ASSOC);
+?>
+
+<div class="filter-section">
+    <form method="GET" action="produkty.php">
+        <label for="category">Filtrovat podle kategorie:</label>
+        <select name="category_id" id="category" onchange="this.form.submit()">
+            <option value="">Všechny kategorie</option>
+            <?php foreach ($categories as $category): ?>
+                <option value="<?= htmlspecialchars($category['id']) ?>" <?= $selectedCategory == $category['id'] ? 'selected' : '' ?>>
+                    <?= htmlspecialchars($category['name']) ?>
+                </option>
+            <?php endforeach; ?>
+        </select>
+    </form>
+</div>
 
     <div class="imagefull" id="fullimgbox">
         <span onclick="closefullimg()" class="closeonclick">X</span>

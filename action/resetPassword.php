@@ -32,12 +32,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             $updateStmt->bindParam(':email', $email);
             $updateStmt->execute();
 
+            echo json_encode(['success' => true, 'message' => 'Zkontrolujte svůj e-mail pro nové heslo.']);
+            ob_flush();
+            flush();
             // Odeslání e-mailu
-            if (sendResetRecoveryPassword($email, $newPassword)) {
-                echo json_encode(['success' => true, 'message' => 'Zkontrolujte svůj e-mail pro nové heslo.']);
-            } else {
-                echo json_encode(['success' => false, 'message' => 'Nepodařilo se odeslat e-mail.']);
-            }
+            sendResetRecoveryPassword($email, $newPassword);
         } else {
             echo json_encode(['success' => false, 'message' => 'E-mail nebyl nalezen.']);
         }

@@ -18,7 +18,7 @@ require_once 'header.php';
     <div class="fullscreen-container">
         <div class="login-container">
             <h2>Reset hesla</h2>
-            <form action="action/loginHandler.php" method="POST">
+            <form>
                 <div class="form-group">
                     <label for="email">E-mail:</label>
                     <!-- htmlspecialchars brání XSS útokům -->
@@ -33,7 +33,7 @@ require_once 'header.php';
                     <div class="error" id="email-error" style="display:none;">Neplatný email.</div><!-- TODO udělat přihlášení a překopnout jestli se jedná o div nebo span -->
                     <span id="email-error" class="error" style="display:none;">Neplatný email.</span>
                 </div>
-                <button type="submit" class="login-button">Pokračovat</button>
+                <button id="reset-button" type="submit" class="login-button">Pokračovat</button>
             </form>
         </div>
     </div>
