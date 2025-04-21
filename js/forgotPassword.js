@@ -1,5 +1,6 @@
 //zapomenuté heslo
 document.addEventListener("DOMContentLoaded", function () {
+    //AJAX pro reset hesla
     document.getElementById('reset-button').addEventListener('click', function (e) {
         e.preventDefault(); // Zabránění odeslání formuláře
         document.getElementById('reset-button').disabled = true;

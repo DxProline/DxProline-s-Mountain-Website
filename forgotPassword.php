@@ -30,7 +30,7 @@ require_once 'header.php';
                         </div>
                     <?php endif; ?>
                     <div class="error" id="email-error">E-mail musí obsahovat znak @.</div>
-                    <div class="error" id="email-error" style="display:none;">Neplatný email.</div><!-- TODO udělat přihlášení a překopnout jestli se jedná o div nebo span -->
+                    <div class="error" id="email-error" style="display:none;">Neplatný email.</div>
                     <span id="email-error" class="error" style="display:none;">Neplatný email.</span>
                 </div>
                 <button id="reset-button" type="submit" class="login-button">Pokračovat</button>
