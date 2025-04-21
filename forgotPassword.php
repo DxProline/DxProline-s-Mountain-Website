@@ -18,6 +18,7 @@ require_once 'header.php';
     <div class="fullscreen-container">
         <div class="login-container">
             <h2>Reset hesla</h2>
+            <!-- zapomenuté heslo -->
             <form>
                 <div class="form-group">
                     <label for="email">E-mail:</label>

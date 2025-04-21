@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="62bfa0d7-db18-4f58-b20e-771f2ab43429" name="Changes" comment="Add AJAX support for password reset functionality and improve email error handling">
+      <change beforePath="$PROJECT_DIR$/forgotPassword.php" beforeDir="false" afterPath="$PROJECT_DIR$/forgotPassword.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/produkty.php" beforeDir="false" afterPath="$PROJECT_DIR$/produkty.php" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;DxProline&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/DxProline/DxProline-s-Mountain-Website.git&quot;,
+    &quot;accountId&quot;: &quot;f29e12aa-45f1-46d1-a4b6-d8818b740c77&quot;
+  }
+}</component>
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP" />
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6
+}</component>
+  <component name="ProjectId" id="2vfNsRhxe2mqOq6Bk785q53DTtq" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/jiric/Downloads/Maturita/Muj Web-Zaloha/Web_Zaloha&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\jiric\Downloads\Maturita\Muj Web-Zaloha\Web_Zaloha" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\jiric\Downloads\Maturita\Muj Web-Zaloha\Web_Zaloha\zadani" />
+      <recent name="C:\Users\jiric\Downloads\Maturita\Muj Web-Zaloha\Web_Zaloha\js" />
+      <recent name="C:\Users\jiric\Downloads\Maturita\Muj Web-Zaloha\Web_Zaloha\action" />
+      <recent name="C:\Users\jiric\Downloads\Maturita\Muj Web-Zaloha\Web_Zaloha" />
+    </key>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-f27c65a3e318-JavaScript-PS-251.23774.436" />
+        <option value="bundled-php-predefined-a98d8de5180a-aaeaa8632555-com.jetbrains.php.sharedIndexes-PS-251.23774.436" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="62bfa0d7-db18-4f58-b20e-771f2ab43429" name="Changes" comment="" />
+      <created>1744532374456</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1744532374456</updated>
+      <workItem from="1744532375679" duration="12667000" />
+      <workItem from="1744623594929" duration="1475000" />
+      <workItem from="1744625795341" duration="115000" />
+      <workItem from="1744625923013" duration="1518000" />
+      <workItem from="1744630093959" duration="17958000" />
+      <workItem from="1744738587350" duration="5699000" />
+      <workItem from="1744744367074" duration="83000" />
+      <workItem from="1744744457827" duration="54000" />
+      <workItem from="1744744519717" duration="1750000" />
+      <workItem from="1744749744492" duration="452000" />
+      <workItem from="1744750208149" duration="193000" />
+      <workItem from="1744750409975" duration="31000" />
+      <workItem from="1744750447695" duration="880000" />
+      <workItem from="1744814792120" duration="2221000" />
+      <workItem from="1745062560136" duration="62000" />
+      <workItem from="1745062636288" duration="3321000" />
+      <workItem from="1745156897343" duration="542000" />
+      <workItem from="1745178844580" duration="2066000" />
+      <workItem from="1745219637469" duration="620000" />
+      <workItem from="1745237187299" duration="5406000" />
+      <workItem from="1745246608018" duration="74000" />
+      <workItem from="1745246693786" duration="1826000" />
+    </task>
+    <task id="LOCAL-00001" summary="Zaměnění projektové stuktury, Vyplněné přihlášení, plně funkční hashe a ukládání do databáze">
+      <option name="closed" value="true" />
+      <created>1744535546126</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1744535546126</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Zaměnění projektové stuktury, Vyplněné přihlášení, plně funkční hashe a ukládání do databáze">
+      <option name="closed" value="true" />
+      <created>1744535645069</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1744535645069</updated>
+    </task>
+    <task id="LOCAL-00003" summary="neztrácí se uživatelem vyplněné hodnoty, zpracování chyb &#10;Nesprávně vyplněný formulář bude odmítnut a vrácen k opravě.&#10;Veškerá data zůstanou předvyplněna. Jedinou výjimkou jsou pole s&#10;heslem.">
+      <option name="closed" value="true" />
+      <created>1744541314308</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1744541314308</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Přidání odkazu na zapomenuté heslo a uchování emailu v přihlašovacím formuláři">
+      <option name="closed" value="true" />
+      <created>1744636908342</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1744636908342</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Refactor file structure and update script paths for product details and login pages">
+      <option name="closed" value="true" />
+      <created>1744654100356</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1744654100356</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Add password reset functionality with email validation and error handling">
+      <option name="closed" value="true" />
+      <created>1744658365567</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1744658365567</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Implement password reset functionality with email validation and redirect to login page">
+      <option name="closed" value="true" />
+      <created>1744743030395</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1744743030395</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Add category filter to product listing page with dropdown selection">
+      <option name="closed" value="true" />
+      <created>1744743785450</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1744743785450</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Add AJAX support for password reset functionality and improve email error handling">
+      <option name="closed" value="true" />
+      <created>1745238675440</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1745238675440</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Zaměnění projektové stuktury, Vyplněné přihlášení, plně funkční hashe a ukládání do databáze" />
+    <MESSAGE value="neztrácí se uživatelem vyplněné hodnoty, zpracování chyb &#10;Nesprávně vyplněný formulář bude odmítnut a vrácen k opravě.&#10;Veškerá data zůstanou předvyplněna. Jedinou výjimkou jsou pole s&#10;heslem." />
+    <MESSAGE value="Přidání odkazu na zapomenuté heslo a uchování emailu v přihlašovacím formuláři" />
+    <MESSAGE value="Refactor file structure and update script paths for product details and login pages" />
+    <MESSAGE value="Add password reset functionality with email validation and error handling" />
+    <MESSAGE value="Implement password reset functionality with email validation and redirect to login page" />
+    <MESSAGE value="Add category filter to product listing page with dropdown selection" />
+    <MESSAGE value="Add AJAX support for password reset functionality and improve email error handling" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add AJAX support for password reset functionality and improve email error handling" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>

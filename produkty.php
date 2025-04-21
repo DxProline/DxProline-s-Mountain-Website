@@ -47,6 +47,7 @@ $products = $productStmt->fetchAll(PDO::FETCH_ASSOC);
     <form method="GET" action="produkty.php">
         <label for="category">Filtrovat podle kategorie:</label>
         <select name="category_id" id="category" onchange="this.form.submit()">
+            <!-- dropdown menu -->
             <option value="">Všechny kategorie</option>
             <?php foreach ($categories as $category): ?>
                 <option value="<?= htmlspecialchars($category['id']) ?>" <?= $selectedCategory == $category['id'] ? 'selected' : '' ?>>
