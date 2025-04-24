@@ -77,9 +77,9 @@ require_once 'header.php';
         </form>
     </div>
 
-    <footer>
-        <a href="index.php">Zpět na hlavní stránku</a>
-    </footer>
+    <?php
+    require_once 'footer.php';
+    ?>
 </body>
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 <script src="js/swiperConfig.js"></script>

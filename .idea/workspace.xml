@@ -5,8 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="62bfa0d7-db18-4f58-b20e-771f2ab43429" name="Changes" comment="Add AJAX support for password reset functionality and improve email error handling">
-      <change beforePath="$PROJECT_DIR$/forgotPassword.php" beforeDir="false" afterPath="$PROJECT_DIR$/forgotPassword.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/produkty.php" beforeDir="false" afterPath="$PROJECT_DIR$/produkty.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/detail-arcteryx.php" beforeDir="false" afterPath="$PROJECT_DIR$/detail-arcteryx.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -113,7 +113,9 @@
       <workItem from="1745219637469" duration="620000" />
       <workItem from="1745237187299" duration="5406000" />
       <workItem from="1745246608018" duration="74000" />
-      <workItem from="1745246693786" duration="1826000" />
+      <workItem from="1745246693786" duration="5911000" />
+      <workItem from="1745350485873" duration="299000" />
+      <workItem from="1745519980590" duration="811000" />
     </task>
     <task id="LOCAL-00001" summary="Zaměnění projektové stuktury, Vyplněné přihlášení, plně funkční hashe a ukládání do databáze">
       <option name="closed" value="true" />
