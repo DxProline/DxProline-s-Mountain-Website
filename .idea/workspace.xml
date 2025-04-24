@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="62bfa0d7-db18-4f58-b20e-771f2ab43429" name="Changes" comment="Add AJAX support for password reset functionality and improve email error handling">
+    <list default="true" id="62bfa0d7-db18-4f58-b20e-771f2ab43429" name="Changes" comment="Refactor footer inclusion in product detail pages to use a common footer file">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/detail-arcteryx.php" beforeDir="false" afterPath="$PROJECT_DIR$/detail-arcteryx.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -115,7 +115,7 @@
       <workItem from="1745246608018" duration="74000" />
       <workItem from="1745246693786" duration="5911000" />
       <workItem from="1745350485873" duration="299000" />
-      <workItem from="1745519980590" duration="811000" />
+      <workItem from="1745519980590" duration="1288000" />
     </task>
     <task id="LOCAL-00001" summary="Zaměnění projektové stuktury, Vyplněné přihlášení, plně funkční hashe a ukládání do databáze">
       <option name="closed" value="true" />
@@ -189,7 +189,15 @@
       <option name="project" value="LOCAL" />
       <updated>1745238675440</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Refactor footer inclusion in product detail pages to use a common footer file">
+      <option name="closed" value="true" />
+      <created>1745520929947</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1745520929947</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -204,7 +212,8 @@
     <MESSAGE value="Implement password reset functionality with email validation and redirect to login page" />
     <MESSAGE value="Add category filter to product listing page with dropdown selection" />
     <MESSAGE value="Add AJAX support for password reset functionality and improve email error handling" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add AJAX support for password reset functionality and improve email error handling" />
+    <MESSAGE value="Refactor footer inclusion in product detail pages to use a common footer file" />
+    <option name="LAST_COMMIT_MESSAGE" value="Refactor footer inclusion in product detail pages to use a common footer file" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

@@ -72,7 +72,7 @@
 
     .menu-icon {
         width: 20px;
-        height: 20px;
+        height: 20px; /* Výška v absolutních jednotkách*/
     }
 }
 
@@ -216,7 +216,7 @@ button[onclick="proceedToCheckout()"]:hover {
 
 /* Video na pozadí */
 .video-background {
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
@@ -578,7 +578,7 @@ ul {
 /* #PatagoniaBunda */
 /* Styl pro video na pozadí */
 .video-background {
-    position: fixed; /*absolutní pozicování objektu */
+    position: absolute; /*absolutní pozicování objektu */
     top: 0;
     left: 0;
     width: 100%;
@@ -600,7 +600,7 @@ background: none;
 
 
 .product-detail {
-    position: relative; /*absolutní pozicování objektu */
+    position: absolute; /*absolutní pozicování objektu */
     z-index: 1; /* Obsah bude nad videem */
     background-color: rgba(255, 255, 255, 0.8); /* Poloprůhledné pozadí pro čitelnost */
     border-radius: 8px;
