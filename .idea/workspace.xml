@@ -4,11 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="62bfa0d7-db18-4f58-b20e-771f2ab43429" name="Changes" comment="Enhance order creation process by preserving user input and improving data handling">
-      <change afterPath="$PROJECT_DIR$/action/checkStock.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/imageOpener.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/imageOpener.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/produkty.php" beforeDir="false" afterPath="$PROJECT_DIR$/produkty.php" afterDir="false" />
+    <list default="true" id="62bfa0d7-db18-4f58-b20e-771f2ab43429" name="Changes" comment="Add stock availability check with AJAX functionality">
+      <change beforePath="$PROJECT_DIR$/action/resetPassword.php" beforeDir="false" afterPath="$PROJECT_DIR$/action/resetPassword.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -117,7 +114,7 @@
       <workItem from="1745246608018" duration="74000" />
       <workItem from="1745246693786" duration="5911000" />
       <workItem from="1745350485873" duration="299000" />
-      <workItem from="1745519980590" duration="7232000" />
+      <workItem from="1745519980590" duration="7472000" />
     </task>
     <task id="LOCAL-00001" summary="Zaměnění projektové stuktury, Vyplněné přihlášení, plně funkční hashe a ukládání do databáze">
       <option name="closed" value="true" />
@@ -223,7 +220,15 @@
       <option name="project" value="LOCAL" />
       <updated>1745526979880</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Add stock availability check with AJAX functionality">
+      <option name="closed" value="true" />
+      <created>1745527428939</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1745527428939</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -242,7 +247,8 @@
     <MESSAGE value="Refactor video background positioning in CSS for improved layout consistency" />
     <MESSAGE value="Add order creation functionality with form handling and database integration" />
     <MESSAGE value="Enhance order creation process by preserving user input and improving data handling" />
-    <option name="LAST_COMMIT_MESSAGE" value="Enhance order creation process by preserving user input and improving data handling" />
+    <MESSAGE value="Add stock availability check with AJAX functionality" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add stock availability check with AJAX functionality" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

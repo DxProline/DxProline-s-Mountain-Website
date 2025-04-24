@@ -23,6 +23,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         if ($stmt->rowCount() > 0) {
             // Generování nového hesla
             $newPassword = bin2hex(random_bytes(4)); // 8 znaků
+            //Hesla jsou osolená díky password_hash
             $passwordHash = password_hash($newPassword, PASSWORD_DEFAULT);
 
             // Aktualizace hesla v databázi
