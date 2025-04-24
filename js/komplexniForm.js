@@ -1,7 +1,15 @@
 window.onload = function() {
+
+    // Zkontroluj, zda URL obsahuje success=1
+    const urlParams = new URLSearchParams(window.location.search);
+    if (urlParams.get('success') === '1') {
+        localStorage.removeItem('cart');
+        alert('Objednávka byla úspěšně odeslána.');
+    }
     loadCart();
 };
 function validateForm(event) {
+    return true;
 
     event.preventDefault();
     const nameInput = document.getElementById('name');
@@ -34,6 +42,7 @@ function validateForm(event) {
 
     if (isValid) {
         alert('Formulář byl úspěšně odeslán');
-        document.getElementById('contact-form').reset();
+        //document.getElementById('contact-form').reset();
     }
+    return isValid;
 }

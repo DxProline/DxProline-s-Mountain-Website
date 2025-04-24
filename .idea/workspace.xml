@@ -4,9 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="62bfa0d7-db18-4f58-b20e-771f2ab43429" name="Changes" comment="Refactor footer inclusion in product detail pages to use a common footer file">
+    <list default="true" id="62bfa0d7-db18-4f58-b20e-771f2ab43429" name="Changes" comment="Refactor video background positioning in CSS for improved layout consistency">
+      <change afterPath="$PROJECT_DIR$/action/createOrder.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/komplexniForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/komplexniForm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/komplexniForm.php" beforeDir="false" afterPath="$PROJECT_DIR$/komplexniForm.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -115,7 +117,7 @@
       <workItem from="1745246608018" duration="74000" />
       <workItem from="1745246693786" duration="5911000" />
       <workItem from="1745350485873" duration="299000" />
-      <workItem from="1745519980590" duration="1288000" />
+      <workItem from="1745519980590" duration="4291000" />
     </task>
     <task id="LOCAL-00001" summary="Zaměnění projektové stuktury, Vyplněné přihlášení, plně funkční hashe a ukládání do databáze">
       <option name="closed" value="true" />
@@ -197,7 +199,15 @@
       <option name="project" value="LOCAL" />
       <updated>1745520929947</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Refactor video background positioning in CSS for improved layout consistency">
+      <option name="closed" value="true" />
+      <created>1745521317283</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1745521317283</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -213,7 +223,8 @@
     <MESSAGE value="Add category filter to product listing page with dropdown selection" />
     <MESSAGE value="Add AJAX support for password reset functionality and improve email error handling" />
     <MESSAGE value="Refactor footer inclusion in product detail pages to use a common footer file" />
-    <option name="LAST_COMMIT_MESSAGE" value="Refactor footer inclusion in product detail pages to use a common footer file" />
+    <MESSAGE value="Refactor video background positioning in CSS for improved layout consistency" />
+    <option name="LAST_COMMIT_MESSAGE" value="Refactor video background positioning in CSS for improved layout consistency" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

@@ -13,6 +13,7 @@
 <?php
 require_once 'session.php';
 require_once 'header.php';
+require_once 'database.php';
     ?>
     <main class="site-center">
         <div class="header-container">
@@ -36,7 +37,7 @@ require_once 'header.php';
     
         <div class="form-container">
             <h2>Objednávka</h2>
-            <form id="contact-form" onsubmit="validateForm(event)" method="post">
+            <form id="contact-form" onsubmit="validateForm(event)" method="post" action="action/createOrder.php">
                 <div class="form-group">
                     <label for="name">Jméno</label>
                     <input type="text" id="name" name="name" required>
@@ -47,14 +48,18 @@ require_once 'header.php';
                     <div class="warning" id="email-warning">Email musí obsahovat znak @</div>
                 </div>
                 <div class="form-group">
-                    <label for="adress">Adress</label>
-                    <input type="adress" id="adress" name="adress" required>
+                    <label for="address">Adresa</label>
+                    <input type="address" id="address" name="address" required>
                     <div class="warning" id="email-warning">Email musí obsahovat znak @</div>
                 </div>
                 <div class="form-group">
                     <label for="phone">Telefonní číslo</label>
                     <input type="text" id="phone" name="phone" required>
                     <div class="warning" id="phone-warning">Telefonní číslo musí obsahovat 9 číslic.</div>
+                </div>
+                <div class="form-group">
+                    <label for="remark">Poznámka</label>
+                    <input type="text" id="remark" name="remark">
                 </div>
                 <button type="submit">Odeslat</button>
             </form>
