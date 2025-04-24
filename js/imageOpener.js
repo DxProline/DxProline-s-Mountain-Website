@@ -41,3 +41,33 @@ document.addEventListener("keydown", function (event) {
         nextImage();
     }
 });
+
+
+//AJAX pro kontrolu dostupnosti zboží
+
+document.addEventListener("DOMContentLoaded", function () {
+    const links = document.querySelectorAll(".check-stock");
+
+    links.forEach(link => {
+        link.addEventListener("click", function (e) {
+            e.preventDefault();
+
+            const productId = this.getAttribute("data-id");
+            const stockInfo = document.getElementById(`stock-info-${productId}`);
+
+            fetch(`action/checkStock.php?id=${productId}`)
+                .then(response => response.json())
+                .then(data => {
+                    if (data.success) {
+                        stockInfo.textContent = `Je dostupných ${data.stock} kusů.`;
+                    } else {
+                        stockInfo.textContent = data.message;
+                    }
+                })
+                .catch(error => {
+                    console.error("Chyba:", error);
+                    stockInfo.textContent = "Došlo k chybě při ověřování dostupnosti.";
+                });
+        });
+    });
+});

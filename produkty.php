@@ -75,6 +75,9 @@ $products = $productStmt->fetchAll(PDO::FETCH_ASSOC);
                 <img src="<?= htmlspecialchars($product['image_path']) ?>" onclick="openImgOnfull(this.src)" alt="<?= htmlspecialchars($product['name']) ?>" class="product-image">
                 <h2><?= htmlspecialchars($product['name']) ?></h2>
                 <p><?= htmlspecialchars($product['description']) ?></p>
+                <a href="#" class="check-stock" data-id="<?= $product['id'] ?>">Ověřit dostupnost zboží</a>
+                <span class="stock-info" id="stock-info-<?= $product['id'] ?>"></span>
+
             </div>
 
 
