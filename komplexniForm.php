@@ -14,6 +14,19 @@
 require_once 'session.php';
 require_once 'header.php';
 require_once 'database.php';
+
+// htmlspecialchars brání XSS útokům
+$name = isset($_GET['name']) ? htmlspecialchars($_GET['name']) : '';
+$email = isset($_GET['email']) ? htmlspecialchars($_GET['email']) : '';
+$address = isset($_GET['address']) ? htmlspecialchars($_GET['address']) : '';
+$phone = isset($_GET['phone']) ? htmlspecialchars($_GET['phone']) : '';
+$remark = isset($_GET['remark']) ? htmlspecialchars($_GET['remark']) : '';
+
+if ($email == ""){
+    $email = isset($_SESSION['user_email']) ? $_SESSION['user_email'] : '';
+}
+
+
     ?>
     <main class="site-center">
         <div class="header-container">
@@ -40,26 +53,27 @@ require_once 'database.php';
             <form id="contact-form" onsubmit="validateForm(event)" method="post" action="action/createOrder.php">
                 <div class="form-group">
                     <label for="name">Jméno</label>
-                    <input type="text" id="name" name="name" required>
+                    //Neztrácí se uživatelem vyplněné hodnty
+                    <input type="text" id="name" name="name" required value="<?= $name ?>">
                 </div>
                 <div class="form-group">
                     <label for="email">Email</label>
-                    <input type="email" id="email" name="email" required value=<?= isset($_SESSION['user_email'])? $_SESSION['user_email']: "" ?>>
+                    <input type="email" id="email" name="email" required value="<?= $email ?>">
                     <div class="warning" id="email-warning">Email musí obsahovat znak @</div>
                 </div>
                 <div class="form-group">
                     <label for="address">Adresa</label>
-                    <input type="address" id="address" name="address" required>
+                    <input type="address" id="address" name="address" required value="<?= $address ?>">
                     <div class="warning" id="email-warning">Email musí obsahovat znak @</div>
                 </div>
                 <div class="form-group">
                     <label for="phone">Telefonní číslo</label>
-                    <input type="text" id="phone" name="phone" required>
+                    <input type="text" id="phone" name="phone" required value="<?= $phone ?>">
                     <div class="warning" id="phone-warning">Telefonní číslo musí obsahovat 9 číslic.</div>
                 </div>
                 <div class="form-group">
                     <label for="remark">Poznámka</label>
-                    <input type="text" id="remark" name="remark">
+                    <input type="text" id="remark" name="remark" value="<?= $remark ?>">
                 </div>
                 <button type="submit">Odeslat</button>
             </form>

@@ -25,7 +25,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
 
     if ($stmt->execute()) {
-        header('Location: ../komplexniForm.php?success=1');
+        header('Location: ../komplexniForm.php?success=1&name=' . urlencode($name)
+            . '&email=' . urlencode($email)
+            . '&address=' . urlencode($address)
+            . '&phone=' . urlencode($phone)
+            . '&remark=' . urlencode($remark));
+        exit;
 
     } else {
         echo "Chyba při ukládání objednávky: " . $stmt->error;
