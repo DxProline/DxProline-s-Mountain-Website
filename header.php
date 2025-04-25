@@ -13,7 +13,14 @@
                 <img src="menu.png" alt="Menu Icon" class="menu-icon">
             </a>
         </li>
-        <li><a href="menu.php">Menu</a></li>
+        <li class="dropdown">
+            <a href="menu.php" class="dropbtn">Menu</a>
+            <ul class="dropdown-content">
+                <li><a href="produkty.php">Produkty</a></li>
+                <li><a href="#">Služby</a></li>
+                <li><a href="kontakt.php">Kontakt</a></li>
+            </ul>
+        </li>
         <li><a href="produkty.php">Produkty</a></li>
         <li><a href="#">Služby</a></li>
         <li><a href="kontakt.php">Kontakt</a></li>

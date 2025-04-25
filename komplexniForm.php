@@ -53,7 +53,7 @@ if ($email == ""){
             <form id="contact-form" onsubmit="validateForm(event)" method="post" action="action/createOrder.php">
                 <div class="form-group">
                     <label for="name">Jméno</label>
-                    //Neztrácí se uživatelem vyplněné hodnty
+                    <!--Neztrácí se uživatelem vyplněné hodnty -->
                     <input type="text" id="name" name="name" required value="<?= $name ?>">
                 </div>
                 <div class="form-group">
