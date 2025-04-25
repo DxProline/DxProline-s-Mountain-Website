@@ -72,7 +72,7 @@ if ($email == ""){
                     <div class="warning" id="phone-warning">Telefonní číslo musí obsahovat 9 číslic.</div>
                 </div>
                 <div class="form-group">
-                    <label for="remark">Poznámka</label>
+                    <label for="remark">Poznámka *Nepovinné</label>
                     <input type="text" id="remark" name="remark" value="<?= $remark ?>">
                 </div>
                 <button type="submit">Odeslat</button>
