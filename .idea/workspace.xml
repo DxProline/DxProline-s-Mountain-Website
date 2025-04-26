@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="62bfa0d7-db18-4f58-b20e-771f2ab43429" name="Changes" comment="Add dropdown menu for navigation and style enhancements">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/komplexniForm.php" beforeDir="false" afterPath="$PROJECT_DIR$/komplexniForm.php" afterDir="false" />
+    <list default="true" id="62bfa0d7-db18-4f58-b20e-771f2ab43429" name="Changes" comment="Add stock availability check with AJAX functionality">
+      <change beforePath="$PROJECT_DIR$/action/resetPassword.php" beforeDir="false" afterPath="$PROJECT_DIR$/action/resetPassword.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,7 +34,7 @@
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
     &quot;url&quot;: &quot;https://github.com/DxProline/DxProline-s-Mountain-Website.git&quot;,
-    &quot;accountId&quot;: &quot;e7031a66-402c-469d-8742-a02fb8d6d046&quot;
+    &quot;accountId&quot;: &quot;f29e12aa-45f1-46d1-a4b6-d8818b740c77&quot;
   }
 }</component>
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP" />
@@ -79,8 +78,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-d6986cc7102b-1632447f56bf-JavaScript-PS-243.26053.13" />
-        <option value="bundled-php-predefined-a98d8de5180a-1ec7b7818973-com.jetbrains.php.sharedIndexes-PS-243.26053.13" />
+        <option value="bundled-js-predefined-d6986cc7102b-f27c65a3e318-JavaScript-PS-251.23774.436" />
+        <option value="bundled-php-predefined-a98d8de5180a-aaeaa8632555-com.jetbrains.php.sharedIndexes-PS-251.23774.436" />
       </set>
     </attachedChunks>
   </component>
@@ -116,8 +115,6 @@
       <workItem from="1745246693786" duration="5911000" />
       <workItem from="1745350485873" duration="299000" />
       <workItem from="1745519980590" duration="7472000" />
-      <workItem from="1745527696262" duration="33000" />
-      <workItem from="1745560666580" duration="5180000" />
     </task>
     <task id="LOCAL-00001" summary="Zaměnění projektové stuktury, Vyplněné přihlášení, plně funkční hashe a ukládání do databáze">
       <option name="closed" value="true" />
@@ -231,15 +228,7 @@
       <option name="project" value="LOCAL" />
       <updated>1745527428939</updated>
     </task>
-    <task id="LOCAL-00015" summary="Add dropdown menu for navigation and style enhancements">
-      <option name="closed" value="true" />
-      <created>1745564772696</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1745564772696</updated>
-    </task>
-    <option name="localTasksCounter" value="16" />
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -259,8 +248,7 @@
     <MESSAGE value="Add order creation functionality with form handling and database integration" />
     <MESSAGE value="Enhance order creation process by preserving user input and improving data handling" />
     <MESSAGE value="Add stock availability check with AJAX functionality" />
-    <MESSAGE value="Add dropdown menu for navigation and style enhancements" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add dropdown menu for navigation and style enhancements" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add stock availability check with AJAX functionality" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

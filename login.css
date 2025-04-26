@@ -107,3 +107,55 @@
     color: #0056b3;
     text-decoration: underline;
 }
+
+/* Černý styl */
+.dark-theme {
+    background-color: #000;
+    color: #fff;
+}
+
+.dark-theme .login-container {
+    background-color: #333;
+    color: #fff;
+}
+
+.dark-theme .form-group input {
+    background-color: #444;
+    color: #fff;
+    border: 1px solid #555;
+}
+
+.dark-theme .login-button {
+    background-color: #555;
+    color: #fff;
+}
+
+.dark-theme .login-button:hover {
+    background-color: #777;
+}
+
+.dark-theme .forgot-password-link {
+    color: #bbb;
+}
+
+.dark-theme .forgot-password-link:hover {
+    color: #fff;
+}
+
+#theme-toggle {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 5px 10px;
+    font-size: 0.8rem;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#theme-toggle:hover {
+    background-color: #333;
+}

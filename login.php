@@ -6,7 +6,7 @@
     <title>MEM -Login</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="login.css">
-    <script src="js/login.js"></script>
+    <script src="js/login.js" defer></script>
 </head>
 <body>
 
@@ -48,8 +48,11 @@ require_once 'header.php';
                 <a href="forgotPassword.php" class="forgot-password-link">Zapomněli jste heslo?</a>
             </div>
         </div>
+        <div class="form-group">
+            <button id="theme-toggle" class="login-button">Změna na černý styl</button>
+        </div>
     </div>
-    
+
 
 </body>
 </html>
