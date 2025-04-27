@@ -24,7 +24,7 @@
 /* Nadpis */
 .login-container h2 {
     margin-bottom: 20px;
-    color: #333;
+    color: #333333;
 }
 
 /* Formulářová pole */
@@ -142,18 +142,26 @@
     color: #fff;
 }
 
+.dark-theme .login-container h2 {
+    color: #ffffff;
+}
+
 #theme-toggle {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    padding: 5px 10px;
-    font-size: 0.8rem;
+    width: 120px;
+    height: 50px;
     background-color: #000;
     color: #fff;
     border: none;
-    border-radius: 5px;
+    border-radius: 50%;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
 }
 
 #theme-toggle:hover {
